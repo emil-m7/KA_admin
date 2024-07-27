@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard orders</title>
+  <link rel="stylesheet" href="css/overlayscrollbars.min.css?_v=20240728030931">
+  <link rel="stylesheet" href="css/styles.min.css?_v=20240728030931">
+</head>
+
+<body>
+
+  <div class="main-layout">
+    <div class="main-layout__outer">
+      <div class="main-layout__inner">
+        <div class="main-layout__sidebar">
+          <div class="sidebar">
+            <div class="sidebar__outer">
+              <div class="sidebar__inner">
+                <div class="sidebar__profile">
+                  <div class="sidebar-profile ">
+                    <div class="sidebar-profile__img-wrp">
+                      <img class="sidebar-profile__img" src="https://placehold.co/40" alt="">
+                    </div>
+                    <div class="sidebar-profile__text">Hello, Admin</div>
+                  </div>
+                </div>
+                <div class="sidebar__navbar">
+                  <nav class="sidebar-navbar">
+                    <ul class="sidebar-navbar__items">
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link " href="javascript:void(0);">Pages</a>
+                      </li>
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link " href="javascript:void(0);">Products</a>
+                      </li>
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link " href="javascript:void(0);">Recommedations</a>
+                      </li>
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link " href="javascript:void(0);">Categories</a>
+                      </li>
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link --active" href="javascript:void(0);">Orders</a>
+                      </li>
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link " href="javascript:void(0);">Statistics</a>
+                      </li>
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link " href="javascript:void(0);">Users</a>
+                      </li>
+                      <li class="sidebar-navbar__item">
+                        <a class="sidebar-navbar__link" href="javascript:void(0);">Log out
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.56122 0C6.41437 0 5.50141 0.929066 5.50141 2.0598V7.56115C5.50141 8.49861 6.87641 8.49861 6.87641 7.56115V2.0598C6.87641 1.66704 7.18725 1.37498 7.56122 1.37498H19.9403C20.333 1.37498 20.6251 1.69389 20.6251 2.0598V19.9402C20.6251 20.3114 20.333 20.625 19.9403 20.625H7.56122C7.16845 20.625 6.87641 20.3114 6.87641 19.9402V14.4388C6.87641 13.5286 5.50141 13.5152 5.50141 14.4388V19.9402C5.50141 21.0843 6.43049 22 7.56122 22H19.9403C21.071 22 22.0001 21.0843 22.0001 19.9402V2.0598C22.0001 0.929066 21.0844 0 19.9403 0H7.56122ZM10.5153 8.05394L12.7739 10.3125H0.684875C-0.230896 10.3125 -0.230896 11.6875 0.684875 11.6875H12.7779L10.5153 13.946C9.86542 14.5959 10.8403 15.5708 11.4902 14.9209L14.9263 11.4847C15.1937 11.2173 15.1937 10.7826 14.9263 10.5152L11.4902 7.07909C10.8011 6.45141 9.90269 7.38687 10.5153 8.05394Z" />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-layout__content">
+          <div class="content">
+            <div class="content__header">
+              <div class="content-header">
+                <div class="content-header__left"></div>
+                <div class="content-header__center">
+                  <div class="content-header__title">Orders</div>
+                </div>
+                <div class="content-header__right">
+                  <div class="content-header-search">
+                    <label for="hsearch">Search</label>
+                    <input id="hsearch" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content__body">
+              <div class="orders__content-row">
+                <nav class="orders__nav">
+                  <ul class="orders__nav-items">
+                    <li class="orders__nav-item">
+                      <a class="orders__nav-link --active" href="javascript:void(0);">In cart</a>
+                    </li>
+                    <li class="orders__nav-item">
+                      <a class="orders__nav-link" href="javascript:void(0);">Ordered</a>
+                    </li>
+                    <li class="orders__nav-item">
+                      <a class="orders__nav-link" href="javascript:void(0);">Delivered</a>
+                    </li>
+                    <li class="orders__nav-item">
+                      <a class="orders__nav-link" href="javascript:void(0);">Confirmed</a>
+                    </li>
+                    <li class="orders__nav-item">
+                      <a class="orders__nav-link" href="javascript:void(0);">Canceled</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="orders__content">
+                  <div class="orders__content-table common-table --outline-column-2">
+                    <table>
+                      <tr>
+                        <th>User in cart</th>
+                        <th>Products in cart</th>
+                        <th>Money in cart</th>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>145</td>
+                        <td>50</td>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <div class="orders__content-table common-table">
+                    <table>
+                      <tr>
+                        <th>PRODUCT1</th>
+                        <th>PRODUCT2</th>
+                        <th>PRODUCT3</th>
+                        <th>PRODUCT4</th>
+                        <th>PRODUCT5</th>
+                        <th>PRODUCT6</th>
+                        <th>PRODUCT7</th>
+                        <th>PRODUCT8</th>
+                        <th>PRODUCT9</th>
+                        <th>PRODUCT10</th>
+                        <th>PRODUCT11</th>
+                        <th>PRODUCT12</th>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>145</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>145</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>145</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>145</td>
+                        <td>50</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="orders__summary">
+                <ul class="orders__summary-nav-items">
+                  <li class="orders__summary-nav-item">
+                    <a class="orders__summary-nav-link --active" href="javascript:void(0);">Ordered</a>
+                  </li>
+                  <li class="orders__summary-nav-item">
+                    <a class="orders__summary-nav-link" href="javascript:void(0);">Delivered</a>
+                  </li>
+                  <li class="orders__summary-nav-item">
+                    <a class="orders__summary-nav-link" href="javascript:void(0);">Confirmed</a>
+                  </li>
+                  <li class="orders__summary-nav-item">
+                    <a class="orders__summary-nav-link" href="javascript:void(0);">Canceled</a>
+                  </li>
+                </ul>
+                <div class="common-table orders__summary-table-wrp">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>order number</th>
+                        <th>order date</th>
+                        <th>arrival date</th>
+                        <th>email</th>
+                        <th>product ordered</th>
+                        <th>product value</th>
+                        <th>product type</th>
+                        <th>shipping value</th>
+                        <th>Adress</th>
+                        <th>order status</th>
+                        <th>payment status</th>
+                        <th>remarks</th>
+                        <th>nouts</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>12/08/22</td>
+                        <td>12/08/22</td>
+                        <td>example@uk.com</td>
+                        <td>
+                          <div class="orders__summary-grided-text">
+                            <div>
+                              <span>P1</span>
+                              <span>P2</span>
+                              <span>P3</span>
+                            </div>
+                            <div>
+                              <span>1$</span>
+                              <span>2$</span>
+                              <span>3$</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>3$</td>
+                        <td>digital</td>
+                        <td>54$</td>
+                        <td>
+                          <div>25 Park parade</div>
+                          <div>Whitley Bay</div>
+                          <div>NE26 1DT</div>
+                        </td>
+                        <td>in process</td>
+                        <td>paid</td>
+                        <td>
+                          <div>
+                            remark 1 some text some text
+                          </div>
+                          <div class="orders__summary-row-center">
+                            <button class="orders__summary-plus-btn">create new</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            remark 1 some text some text
+                          </div>
+                          <div class="orders__summary-row-center">
+                            <button class="orders__summary-plus-btn">create new</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>02</td>
+                        <td>12/08/22</td>
+                        <td>12/08/22</td>
+                        <td>example@uk.com</td>
+                        <td>
+                          <div class="orders__summary-grided-text">
+                            <div>
+                              <span>P1</span>
+                              <span>P2</span>
+                              <span>P3</span>
+                            </div>
+                            <div>
+                              <span>1$</span>
+                              <span>2$</span>
+                              <span>3$</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>3$</td>
+                        <td>phisical</td>
+                        <td>54$</td>
+                        <td>
+                          <div>25 Park parade</div>
+                          <div>Whitley Bay</div>
+                          <div>NE26 1DT</div>
+                        </td>
+                        <td>in process</td>
+                        <td>paid</td>
+                        <td>
+                          <div>
+                            remark 1 some text some text
+                          </div>
+                          <div class="orders__summary-row-center">
+                            <button class="orders__summary-plus-btn">create new</button>
+                          </div>
+                        </td>
+                        <td>
+                          <div>
+                            remark 1 some text some text
+                          </div>
+                          <div class="orders__summary-row-center">
+                            <button class="orders__summary-plus-btn">create new</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js?_v=20240728030931"></script>
+  <script src="js/chartjs.min.js?_v=20240728030931"></script>
+  <script src="js/overlayscrollbars.browser.es.min.js?_v=20240728030931"></script>
+  <script src="js/main.min.js?_v=20240728030931"></script>
+
+</body>
+
+</html>
